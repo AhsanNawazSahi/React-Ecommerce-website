@@ -1,0 +1,120 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    background-color: #faebd74d;
+}
+#main_container{
+  margin-top: 4.7rem!important;
+}
+
+.collection_image {
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.collection_image:hover {
+    transform: scale(1.05);
+}
+
+#sellingproduct_container1 {
+    height: 80%;
+}
+
+#card_hight {
+    height: 90%;
+}
+
+.sellingproducts {
+    margin-bottom: -7rem !important;
+}
+
+.offer_image {
+    height: 12%;
+    width: 12%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    animation: rotateAnimation 5s infinite linear;
+}
+
+@keyframes rotateAnimation {
+    from {
+        transform: rotateY(0deg);
+    }
+
+    to {
+        transform: rotateY(360deg);
+    }
+}
+
+.offer_card {
+    border-radius: 3%;
+}
+
+.card_boxShadow {
+    background-color: #fff;
+    box-shadow: 0 10px 30px -15px rgba(0, 0, 0, .2);
+    padding: 1.5rem;
+    border-radius: 10px;
+    border: 1px solid hsla(0, 0%, 82.7%, .397);
+}
+
+#footer {
+    background-color: #e2f5ee7d;
+}
+
+.card_hight1 {
+    position: relative;
+    display: inline-block;
+}
+
+.card_hight1::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+#card_hight1:hover::before {
+    opacity: 1;
+    background-image: url("./images/sellingproduct_image1a.webp");
+}
+#card_hight2:hover::before {
+    opacity: 1;
+    background-image: url("./images/sellingproduct_image2a.webp");
+}
+#card_hight3:hover::before {
+    opacity: 1;
+    background-image: url("./images/sellingproduct_image3a.webp");
+}
+#card_hight5:hover::before {
+    opacity: 1;
+    background-image: url("./images/sellingproduct_image4a.webp");
+}
+
+
+
+/* SellingProducts_model.js  */
+
+hr{
+    border: 1px solid black;
+}
+.SellingProducts_model_card_boxShadow {
+    background-color: #fff;
+    box-shadow: 0 10px 30px -15px rgba(0, 0, 0, .2);
+    border-radius: 10px;
+    border: 1px solid hsla(0, 0%, 82.7%, .397);
+}
+/* #SellingProducts_model_container{
+    max-width: 100%;
+} */
